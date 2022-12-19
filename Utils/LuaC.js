@@ -66,13 +66,7 @@ module.exports = function(data) {
         writeConstant(data.constants[Idx])
     }
 
-    buffer.writeUInt32LE(data.prototypes.length);
-    for (let Idx = 0; Idx < data.constants.length; Idx++) {
-        // There's must be a thing that writes protos here
-        // But theres no protos in this script, so
-        // I'll skip this for now
-    }
-    
+    buffer.writeUInt32LE(data.prototypes.length)
 
     // Useless debug data
     buffer.writeUInt32LE(0) // Source lines
