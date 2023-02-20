@@ -1,4 +1,4 @@
-const { constants } = require("fs/promises")
+
 const { SmartBuffer } = require("smart-buffer")
 
 let Pos = 0
